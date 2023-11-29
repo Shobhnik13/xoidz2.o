@@ -6,7 +6,7 @@ const Navbar = () => {
     return (
       <div>
           {/* for laps  */}
-          <div className="sm:hidden lg:block ">
+          <div className="hidden md:block ">
               <div className="flex justify-center ">
                     <div className="w-[50%] h-[60px]  bg-gray-100/100 rounded-2xl py-6  flex justify-between items-center px-4 shadow-xl border mt-4">
                         {/* left / */}
