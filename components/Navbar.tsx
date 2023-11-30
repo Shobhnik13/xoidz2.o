@@ -1,7 +1,7 @@
 'use client'
 import Image from "next/image"
 import { Button } from "./ui/button"
-
+import { RxHamburgerMenu } from "react-icons/rx";
 const Navbar = () => {
     return (
       <div className="-mt-8">
@@ -27,8 +27,12 @@ const Navbar = () => {
           </div>
           
           {/* for mobiles  */}
-          <div className="block md:hidden">
-  
+          <div className="block md:hidden  mr-5">
+            <div className="flex justify-between items-center">
+                <div><Image src={'/xoidz.png'} width={120} height={120} className="ml-2" alt="logo"/></div>
+                <div><RxHamburgerMenu className="w-8 h-8"/></div>
+            </div>
+
           </div>
       </div>
     )

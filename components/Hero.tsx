@@ -6,7 +6,7 @@ import Navbar from "./Navbar"
 
 const Hero = () => {
   return (
-    <div className="py-8 rounded-[20px] h-[400px] sm:h-[500px] md:h-[650px] mt-2 flex flex-col relative bg-gradient-to-r from-[#ddd8ffff] via-[#f1ecff] to-[#f4faff]">
+    <div className="py-8 rounded-[20px] h-[520px] sm:h-[600px] md:h-[650px] mt-2 flex flex-col relative bg-gradient-to-r from-[#ddd8ffff] via-[#f1ecff] to-[#f4faff]">
       <div className="">
       <Navbar/>
       </div>
