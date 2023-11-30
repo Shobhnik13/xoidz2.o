@@ -4,11 +4,11 @@ import { Button } from "./ui/button"
 
 const Navbar = () => {
     return (
-      <div className="-mt-8 ">
+      <div className="-mt-8">
           {/* for laps  */}
           <div className="hidden md:block ">
               <div className="flex justify-center">
-                    <div className="w-[50%]  h-[60px]  bg-gray-100/100 rounded-2xl py-6  flex justify-between items-center px-4 shadow-xl border mt-4">
+                    <div className="w-[50%]  h-[60px] fixed z-50  bg-gray-100/100 rounded-2xl py-6  flex justify-between items-center px-4 shadow-xl border mt-4">
                         {/* left / */}
                         <div className="flex items-center justify-center">
                             <Image alt="logo image" width={120} height={120} src='/xoidz.png'/>
