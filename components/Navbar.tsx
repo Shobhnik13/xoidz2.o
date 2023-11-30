@@ -4,7 +4,7 @@ import { Button } from "./ui/button"
 
 const Navbar = () => {
     return (
-      <div>
+      <div className="-mt-8">
           {/* for laps  */}
           <div className="hidden md:block ">
               <div className="flex justify-center ">
