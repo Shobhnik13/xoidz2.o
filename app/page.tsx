@@ -5,7 +5,7 @@ import UserSection from '@/components/UserSection'
 import Image from 'next/image'
 export default function Home() {
   return (
-    <div className='h-screen md:w-[99%]   m-auto '>
+    <div className='h-screen md:w-[99%] m-auto '>
     {/* <Navbar /> */}
     <Hero />
     <UserSection/>
