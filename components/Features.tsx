@@ -4,6 +4,7 @@ import Image from "next/image"
 import { FaWhatsapp } from "react-icons/fa";
 import { IoMdEye } from "react-icons/io";
 import { TbReportAnalytics } from "react-icons/tb";
+import { IoRocketSharp } from "react-icons/io5";
 const Features = () => {
     const data=[
         {
@@ -38,15 +39,19 @@ const Features = () => {
         },
     ]
   return (
-    <div className="mt-32">
+    <div className="mt-28 flex flex-col">
+        
+        <span className={`mx-4 md:mx-auto text-center text-[#3e1953] text-base w-[90%] md:w-auto  font-semibold mt-16 bg-white border border-1 shadow-md border-gray-200 rounded-3xl px-4 py-2 flex gap-x-2 justify-center items-center`}><IoRocketSharp/>Features Perfected: Elevate Your Business Beyond Boundaries!</span>
+        <div className="mt-14">
         {data.map((item)=>(
             <div key={item.id} className={`w-[99%] p-4 mx-2 rounded-[20px]  ${item.bgColor} h-auto flex flex-col mt-1 justify-center items-center`}>
                 <Image alt="feature1" src={`${item.imgSrc}`} width={500} height={500} />
-                <span className={`${item.txtColor} font-semibold mt-16 bg-white border border-1 shadow-md border-gray-200 rounded-3xl px-4 py-2 flex gap-x-2 items-center`}>{item.icon}{item.spanText}</span>
+                <span className={`${item.txtColor}  w-[95%] md:w-auto font-semibold mt-16 bg-white border border-1 shadow-md border-gray-200 rounded-3xl px-4 py-2 flex gap-x-2 justify-center items-center`}>{item.icon}{item.spanText}</span>
                 <h1 className={`mt-20 ${item.txtColor} text-4xl w-[70%] text-center font-[600] `}>{item.title}</h1>
                 <p className={`mt-8 text-md font-[450] w-[80%] text-center ${item.txtColor}`}>{item.subTitle}</p>
             </div>
         ))}
+        </div>
     </div>
   )
 }
