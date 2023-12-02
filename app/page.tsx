@@ -1,3 +1,4 @@
+import CarouselComp from '@/components/CarouselComp'
 import Features from '@/components/Features'
 import Hero from '@/components/Hero'
 import Navbar from '@/components/Navbar'
@@ -10,6 +11,7 @@ export default function Home() {
     <Hero />
     <UserSection/>
     <Features/>
+    <CarouselComp/>
 </div>
 
   )
