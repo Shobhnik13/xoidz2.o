@@ -49,7 +49,7 @@ const CarouselComp = () => {
   return (
     <div className="flex flex-col mt-16 overflow-x-hidden pb-12  p-8">
       <div className={`mx-4 md:mx-auto text-center text-[#3e1953] text-base w-[90%] md:w-auto  font-semibold mt-16 bg-white border border-1 shadow-md border-gray-200 rounded-3xl px-4 py-2 flex gap-x-2 justify-center items-center italic`}>
-      "Your Story, Our Success: Shape the Legacy of<span className="font-extrabold text-green-600">Xoidz</span>with Reviews."
+      &quot;Your Story, Our Success: Shape the Legacy of<span className="font-extrabold text-green-600">Xoidz</span>with Reviews.&quot;
       </div>
          <div className="mt-8">
         <Slider {...settings} >
@@ -64,7 +64,7 @@ const CarouselComp = () => {
                 </CardHeader>
                 </div>
                   <CardContent className="mt-3 text-sm text-center text-gray-400 italic">
-                    <p>“{item.subTitle}”</p>
+                    <p>&quot;{item.subTitle}&quot;</p>
                   </CardContent>
               <CardFooter className="text-lg text-[#fdca28] font-semibold flex justify-center items-center gap-x-2">
                   <Image src={'/star.png'} alt="star_img" width={30} height={30}/>Rated at {item.rating}/5

@@ -37,7 +37,7 @@ const UserSection = () => {
         </div>
         {/* cal  */}
         <div className="flex flex-col  items-center bg-[#f1d4f7] md:w-[60%] w-[95%] mx-auto  mt-12 p-8 rounded-2xl">
-      <p className="w-[80%] text-base text-[#3e1953] font-[300]  text-center mx-auto italic">"Unlock the Best Deals: Dive into Savings! Explore, Inquire, and Meet for Tailored Pricing and Product Details – Your Gateway to Exceptional Value Interested to explore Xoidz ? Feel free to schedule a meet!"</p>
+      <p className="w-[80%] text-base text-[#3e1953] font-[300]  text-center mx-auto italic">&quot;Unlock the Best Deals: Dive into Savings! Explore, Inquire, and Meet for Tailored Pricing and Product Details – Your Gateway to Exceptional Value Interested to explore Xoidz ? Feel free to schedule a meet!&quot;</p>
       <Button className="bg-[#311b66]  text-white text-sm mt-4 hover:scale-110 duration-200 ease-in-out transition-all hover:bg-[#311b66]/80" onClick={()=>window.open('https://cal.com/shobhnik13')}>Schedule a meet / cal.com</Button>
     </div>
    
