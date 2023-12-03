@@ -14,7 +14,7 @@ const UserSection = () => {
             <p>Trusted by  <CountUp className='text-xl md:text-3xl font-extrabold text-green-600' start={0} end={100}></CountUp><span className='text-xl md:text-3xl font-extrabold text-green-600'>+</span> businesses to scale outbound sales and drive new revenue</p>
         </div>
         {/* for mobiles   */}
-        <div className="text-[#3c305aff] block w-[300px] mt-36 sm:hidden text-center text-base md:text-xl font-semibold p-2 rounded-2xl border shadow-md">
+        <div className="text-[#3c305aff] block w-auto mt-36 sm:hidden text-center text-base md:text-xl font-semibold p-2 rounded-2xl border shadow-md">
             <p>Trusted by  <CountUp  className='text-xl md:text-3xl font-extrabold text-green-600' start={0} end={100}></CountUp><span className='text-xl md:text-3xl font-extrabold text-green-600'>+</span> businesses to scale outbound sales and drive new revenue</p>
         </div>
         

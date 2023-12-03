@@ -10,7 +10,7 @@ const Hero = () => {
       <div className="">
       <Navbar/>
       </div>
-    <div className="flex flex-col items-center justify-center mt-16 m-auto w-[90%] md:w-[50%] lg:w-[40%]">
+    <div className="flex flex-col items-center justify-center mt-24 md:mt-16 m-auto w-[90%] md:w-[50%] lg:w-[40%]">
         <h1 className="bg-clip-text text-transparent pb-2 bg-gradient-to-t from-[#331083] to-[#2b1265] text-lg sm:text-xl md:text-2xl lg:text-4xl font-semibold text-center">Single Dashboard To manage all your orders</h1>
         <p className="text-[#331083ff] text-center mt-2 md:mt-4">No more juggling between multiple screens. Xoidz multichannel e-commerce integration allows you to manage all your orders from One Dashboard.</p>
         <Button className="bg-[#311b66] text-white text-sm md:text-base lg:text-lg mt-2 sm:mt-12 md:mt-4 rounded-2xl hover:scale-110 duration-200 ease-in-out transition-all hover:bg-[#311b66]/80">Get started for free</Button>
