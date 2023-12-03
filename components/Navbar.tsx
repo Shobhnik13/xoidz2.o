@@ -3,7 +3,21 @@ import Image from "next/image"
 import { Button } from "./ui/button"
 import { RxHamburgerMenu } from "react-icons/rx";
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuLabel, DropdownMenuSeparator, DropdownMenuTrigger } from "./ui/dropdown-menu";
+import { createClientComponentClient } from "@supabase/auth-helpers-nextjs";
 const Navbar = () => {
+    const supabase=createClientComponentClient()
+    const handleLogin=()=>{
+        supabase.auth.signInWithOAuth({
+            provider:'google',
+            options: {
+                redirectTo:`${location.origin}/auth/callback`,
+                queryParams: {
+                  access_type: 'offline',
+                  prompt: 'consent',
+                },
+            },
+        })
+    }
     return (
       <div className="-mt-8">
           {/* for laps  */}
@@ -21,7 +35,7 @@ const Navbar = () => {
                         </div>
                         {/* right  */}
                         <div>
-                            <Button variant="secondary" className="text-white  shadow-md shadow-gray-300 hover:scale-105 bg-purple-900/100 ease-in-out transition-all 2xl:text-lg duration-200 rounded-xl">Log in</Button>
+                            <Button onClick={handleLogin} variant="secondary" className="text-white  shadow-md shadow-gray-300 hover:scale-105 bg-purple-900/100 ease-in-out transition-all 2xl:text-lg duration-200 rounded-xl">Log in</Button>
                         </div>
                     </div>
               </div>

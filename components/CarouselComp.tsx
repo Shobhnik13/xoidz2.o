@@ -61,8 +61,9 @@ const CarouselComp = () => {
   ]
   return (
     <div className="flex flex-col md:mt-16 overflow-x-hidden pb-12 p-8">
-      <span className={`mx-4 md:mx-auto text-center text-[#3e1953] text-sm md:text-base w-[90%] md:w-auto  font-semibold mt-16 bg-white border border-1 shadow-md border-gray-200 rounded-3xl px-4 py-2  gap-x-2 flex justify-center items-center italic`}>
-        <span className="text-xl"><FaUserCheck/></span>
+      <span data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom" className={`mx-4 md:mx-auto text-center text-[#3e1953] text-sm md:text-base w-[90%] md:w-auto  font-semibold mt-16 bg-white border border-1 shadow-md border-gray-200 rounded-3xl px-4 py-2  gap-x-2 flex justify-center items-center italic`}>
+        <span  className="text-xl"><FaUserCheck/></span>
         <span>Your Story, Our Success: Shape the Legacy of Xoidz with Reviews.</span>
        </span>
          <div className="mt-8">

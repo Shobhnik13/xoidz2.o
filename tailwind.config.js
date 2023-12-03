@@ -7,6 +7,7 @@ module.exports = {
     './app/**/*.{ts,tsx}',
     './src/**/*.{ts,tsx}',
 	],
+  plugins: [require('flowbite/plugin')],
   theme: {
     container: {
       center: true,
@@ -85,4 +86,5 @@ module.exports = {
     },
   },
   plugins: [require("tailwindcss-animate")],
+ 
 }

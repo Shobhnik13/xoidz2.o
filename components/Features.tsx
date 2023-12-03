@@ -41,13 +41,16 @@ const Features = () => {
   return (
     <div className="mt-28 flex flex-col">
         
-        <span className={`mx-4 md:mx-auto text-center text-[#3e1953] text-sm md:text-base w-[90%] md:w-auto  font-semibold mt-16 bg-white border border-1 shadow-md border-gray-200 rounded-3xl px-4 py-2 flex gap-x-2 justify-center items-center`}>
+        <span data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom" className={`mx-4 md:mx-auto text-center text-[#3e1953] text-sm md:text-base w-[90%] md:w-auto  font-semibold mt-16 bg-white border border-1 shadow-md border-gray-200 rounded-3xl px-4 py-2 flex gap-x-2 justify-center items-center`}>
            <span className="text-xl"> <IoRocketSharp/></span> 
            <span>Features Perfected: Elevate Your Business Beyond Boundaries!</span>
         </span>
-        <div className="mt-14">
+        <div data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine" className="mt-14">
         {data.map((item)=>(
-            <div key={item.id} className={`w-[99%] p-4 mx-2 rounded-[20px]  ${item.bgColor} h-auto flex flex-col mt-1 justify-center items-center`}>
+            <div  key={item.id} className={`w-[99%] p-4 mx-2 rounded-[20px]  ${item.bgColor} h-auto flex flex-col mt-1 justify-center items-center`}>
                 <Image alt="feature1" src={`${item.imgSrc}`} width={500} height={500} />
                 <span className={`${item.txtColor}  w-[95%] md:w-auto font-semibold mt-16 bg-white border border-1 shadow-md border-gray-200 rounded-3xl px-4 py-2 flex gap-x-2 justify-center items-center`}>
                     <span className="text-xl">{item.icon}</span>
